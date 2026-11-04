@@ -1,0 +1,17 @@
+{
+  "name": "little-bits-of-js",
+  "version": "1.0.0",
+  "description": "Node.js ports of the programs in Mark Watson's 'Little Bits of Common Lisp'",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "repl": "node load.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "fraction.js": "^5.3.4"
+  }
+}
