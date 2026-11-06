@@ -59,6 +59,15 @@ export async function pageText(url) {
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  console.log(await headers('https://markwatson.com'));
-  console.log(`\n\n${await pageText('https://markwatson.com')}`);
+
+    if (!process.argv[2]){
+        console.log("Enter a web address… for example:");
+        console.log("   $ node webscraping.js https://punkish.org/About/");
+    }
+    else {
+        const url = process.argv[2];
+        console.log(await headers(url));
+        console.log(`\n\n${await pageText(url)}`);
+    }
+
 }

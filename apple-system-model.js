@@ -14,12 +14,13 @@ export async function appleFm(prompt) {
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  if (!process.argv[2]){
-    console.log("C'mon, ask me something… for example:");
-    console.log("    nodejs apple-system-model.js 'Summarize the latest US mid-term election results?'");
-  }
-  else {
-    console.log(await appleFm(process.argv[2]));
-  }
+
+    if (!process.argv[2]){
+        console.log("C'mon, ask me something… for example:");
+        console.log("   $ node apple-system-model.js 'Summarize the latest US mid-term election results?'");
+    }
+    else {
+        console.log(await appleFm(process.argv[2]));
+    }
   
 }

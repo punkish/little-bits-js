@@ -10,25 +10,25 @@ One file per program. Node 20+, ES modules.
 Each file also exports its functions, and demos only run when the file is the
 entry point, so `import { bm25Search } from './bm25.js'` has no side effects.
 
-| Lisp file | JS file | Needs |
-|---|---|---|
-| apple-system-model.lisp | apple-system-model.js | macOS + `fm` |
-| gemini.lisp | gemini.js | `GOOGLE_API_KEY` |
-| ollama.lisp | ollama.js | local Ollama |
-| search.lisp | search.js | `EXA_SEARCH_API_KEY`, `BRAVE_SEARCH_API_KEY` |
-| sparql.lisp | sparql.js | network |
-| lightpanda.lisp | lightpanda.js | `lightpanda` binary |
-| webscraping.lisp | webscraping.js | cheerio |
-| osascript.lisp | osascript.js | macOS permissions (see file header) |
-| bayes.lisp | bayes.js | |
-| bm25.lisp | bm25.js | |
-| hopfield.lisp | hopfield.js | |
-| triple-store.lisp | triple-store.js | |
-| vector-store.lisp | vector-store.js | |
-| summarizer.lisp | summarizer.js | |
-| symbolic-math.lisp | symbolic-math.js | fraction.js |
-| autograd.lisp | autograd.js | |
-| load.lisp | load.js | |
+| Lisp file               | JS file               | Needs                                        |
+|-------------------------|-----------------------|----------------------------------------------|
+| apple-system-model.lisp | apple-system-model.js | macOS + `fm`                                 |
+| gemini.lisp             | gemini.js             | `GOOGLE_API_KEY`                             |
+| ollama.lisp             | ollama.js             | local Ollama                                 |
+| search.lisp             | search.js             | `EXA_SEARCH_API_KEY`, `BRAVE_SEARCH_API_KEY` |
+| sparql.lisp             | sparql.js             | network                                      |
+| lightpanda.lisp         | lightpanda.js         | `lightpanda` binary                          |
+| webscraping.lisp        | webscraping.js        | cheerio                                      |
+| osascript.lisp          | osascript.js          | macOS permissions (see file header)          |
+| bayes.lisp              | bayes.js              |                                              |
+| bm25.lisp               | bm25.js               |                                              |
+| hopfield.lisp           | hopfield.js           |                                              |
+| triple-store.lisp       | triple-store.js       |                                              |
+| vector-store.lisp       | vector-store.js       |                                              |
+| summarizer.lisp         | summarizer.js         |                                              |
+| symbolic-math.lisp      | symbolic-math.js      | fraction.js                                  |
+| autograd.lisp           | autograd.js           |                                              |
+| load.lisp               | load.js               |                                              |
 
 ## Where the port differs from the Lisp
 
