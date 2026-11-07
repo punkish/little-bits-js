@@ -16,6 +16,8 @@ export async function appleFm(prompt) {
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
 
     if (!process.argv[2]){
+
+        // Ask for input
         console.log("C'mon, ask me something… for example:");
         console.log("   $ node apple-system-model.js 'Summarize the latest US mid-term election results?'");
     }
